@@ -64,7 +64,7 @@ void printError(shell_data *data, char *str1, char *str2, int status);
 
 /*shell_loop.c*/
 void loopPrompt(shell_data *data);
-int displayPrompt(void);
+/*int displayPrompt(void);*/
 /*input_help.c*/
 void escapeChars(shell_data *data);
 void removeExtraSpace(shell_data *data);

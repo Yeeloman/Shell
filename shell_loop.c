@@ -5,7 +5,7 @@
  *Return: 0 for success
 */
 
-int displayPrompt(void)
+/*int displayPrompt(void)
 {
 	char buffer[1024];
 
@@ -22,7 +22,7 @@ int displayPrompt(void)
 	printString("]--(\x1B[36m$\x1B[0m)\n");
 	printString("\x1B[91m>>\x1B[0m ");
 	return (0);
-}
+}*/
 
 /**
  *loopPrompt - shell's loop
@@ -37,7 +37,8 @@ void loopPrompt(shell_data *data)
 
 	while (loop == 1)
 	{
-		displayPrompt();
+		/*displayPrompt();*/
+		write(STDIN_FILENO, "($) ", 4);
 		eof = _getline(&data->input, &buff, stdin);
 		if (eof != -1)
 		{
