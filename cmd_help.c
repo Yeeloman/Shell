@@ -45,7 +45,6 @@ char *errorMaker(shell_data *data, char *str1, char *str2)
 
 /**
  *isPath - handles the path
- *@data: shell's data
  *Return: pointer to the path
 */
 
